@@ -7,7 +7,7 @@ bot = telebot.TeleBot("6899288816:AAF61IJ-JcAUH1PcWYZ0g89k-F947FMSMRo")
 def send_welcome(message):
     markup = types.InlineKeyboardMarkup()
     web_app = types.WebAppInfo("https://ashishsuman.me/pepelayer/")
-    button = types.InlineKeyboardButton("Open Website", web_app=web_app)
+    button = types.InlineKeyboardButton("Play Now", web_app=web_app)
     markup.add(button)
     bot.send_message(message.chat.id, 
         "🎉 Welcome to Pepe Layer 2! 🎉\n\n"
